@@ -1,0 +1,15 @@
+.footerContainer {
+  display: flex;
+  width: 100vw;
+  background-color: #2c3333;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 100%;
+  padding: 0 20%;
+
+  p {
+    color: #ffffff;
+    font: 400 16px "Raleway", sans-serif;
+  }
+}

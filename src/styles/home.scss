@@ -1,0 +1,98 @@
+#container{
+ 
+  #blueArea {
+    height: 54vh;
+    display: flex;
+    flex-direction: column;
+    
+    #imgBack {
+      align-self: center;
+      width: 800px;
+      height: auto;
+    }
+    #slogan {
+      position:absolute;
+      align-self: center;
+      top: 35%;
+      font: bold 64px 'Poppins', sans-serif;
+    }
+  }
+  #yellowArea{
+    display: flex;
+    height: 10vh; 
+    width: 100vw;
+    background-color:#FFB740;
+    justify-content:center;
+
+    #search{
+      position: relative;
+      top: -50%;
+    }
+  }
+  .mostpop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .title {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;  
+    color: #005792;
+  }
+  .colorChange {
+    background-color:#FFB740;
+    width: 100vw;
+  }
+  .downloadApp{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #downCont{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .photo {
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 500px;
+          height: auto;
+        }
+      }
+      .description {
+        width: 50vw;
+        
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          #text {
+            width: 80%;
+            margin: 20px 0;
+            text-align: justify;
+            color: #fff;
+
+            
+          }
+
+        }
+        #downloadButtons {
+          flex-direction: row;
+           img {
+             width: 25%;
+             height: auto
+           }
+        }
+      }
+    }
+  }
+}

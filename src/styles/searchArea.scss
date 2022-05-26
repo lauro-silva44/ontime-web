@@ -1,0 +1,36 @@
+#searchAreacontainer{
+  display:flex;
+  align-self: center;
+  width: 1000px;
+  height: 140px;
+  background-color:#ffff;
+  border-radius: 8px;
+  
+  
+
+    flex-direction: row; 
+    align-items: center;
+    justify-content:space-around;
+
+    #locationInput{
+      margin-left: 5px;
+      align-self: center;
+      h3{
+        color:#005792;
+      }
+    }
+  }
+  #inputArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #005792;
+    border-radius: 8px; 
+    padding: 8px;
+  }
+  input {
+    border: none;
+    width: 205px;
+    margin-left: 5px;
+  }

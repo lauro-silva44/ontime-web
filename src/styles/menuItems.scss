@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 301;
+  width: 100vw;
+  padding: 0 7%; 
+  
+}
+#logo {
+  width: 80px;
+  height: auto;
+  align-self: flex-start;
+  margin: 20px;
+}
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex;
+    padding: 20px;
+
+  }
+
+ li {
+   display: flex;
+   align-items: center;
+ }  
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  margin: 5px 15px;
+} 
+img {
+  height: 24px;
+  width: auto;
+}
+h3 {
+  color: #FFFFFF;
+  margin-left: 5px;
+  font: 700 16px 'Raleway', sans-serif;
+}

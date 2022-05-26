@@ -1,0 +1,26 @@
+.containerCard{
+
+  margin: 0 1em;
+  img{
+    width: 250px;
+    height: 170px;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+  h3, h2{
+   position: relative;
+   top: -70px;
+   margin-left: 20px;
+   align-self: flex-start;
+   left: 0
+  }
+  h2 {
+    font: bold 20px 'Raleway', sans-serif;
+  }
+  h3 {
+    font: normal 16px 'Raleway', sans-serif;
+  }
+
+
+
+}

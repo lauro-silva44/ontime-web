@@ -1,0 +1,19 @@
+#searachFildContainer{
+
+  h3{
+    color: #005792;
+    margin-bottom: 4px;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #005792;
+    border-radius: 8px; 
+    padding: 4px;
+    input {
+    width: 300px;
+    margin-left: 5px;
+    font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+
+  .drivers {
+    margin: 40px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+  }
+}
