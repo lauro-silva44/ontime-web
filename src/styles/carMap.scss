@@ -1,7 +1,7 @@
 .carMapContainer{
   display: flex;
   width: 400px;
-  height:500px;
+  height:450px;
   background-color: #FFB740;
   border-radius:14px;
   justify-content: center;
@@ -9,7 +9,6 @@
   flex-direction: column;
 
   .infContainer{
-    padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,7 +29,6 @@
         background-color: #005792;
         border-radius: 8px;
         margin-bottom: 5px;
-
       }
       p {
         font:400 16px "Raleway";

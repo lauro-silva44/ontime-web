@@ -10,6 +10,11 @@ import { DriverInfoModal } from "../../components/DriverInfoModal";
 import { ActionButton } from "../../components/ActioButton";
 
 export function Search() {
+  function findId(id: string) {
+    let driver = drivers.find((driver) => driver.id === id);
+
+    return driver;
+  }
   return (
     <div className="searchContainer">
       <Menu />
@@ -26,17 +31,16 @@ export function Search() {
             <CarMap />
           </div>
           <div className="driverInfo">
-            <DriverInfoModal data={drivers[0]} />
+            <DriverInfoModal data={findId("5")} />
             <div className="minibusphoto">
-              <img src={drivers[0].minibusPhoto} alt="minibusPhot" />
+              <img src={findId("1")?.minibusPhoto} alt="minibusPhot" />
             </div>
           </div>
         </div>
         <div className="bookButton">
-          <ActionButton
-            style={{ backgroundColor: "#FFB740" }}
-            title="Book Now"
-          />
+          <button>
+            <h3>Book Now</h3>
+          </button>
         </div>
       </Modal>
     </div>

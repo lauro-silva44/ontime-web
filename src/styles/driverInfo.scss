@@ -23,17 +23,16 @@
     #inf{
       display: flex;
       flex-direction: row;
-      align-items: center;
       margin: 5px 0px;
       padding-right: 60px;
       width:200px;
       
-      h3{
+       > h3{
         display: flex;
         justify-content: center;
         align-items: center;
         color:#2c3333;
-        font: 400 12px 'Raleway', sans-serif;
+        font: 400 14px 'Raleway', sans-serif;
         strong {
           color: #005792;
         }

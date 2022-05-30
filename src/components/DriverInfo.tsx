@@ -26,8 +26,9 @@ export function DriverInfo({ data }: Props) {
       <div className="infos">
         <div id="inf">
           <img src={BadgeSvg} alt="fullName" />
-          <h3>
-            {data.fullName} <strong>({data.nickname})</strong>
+          <h3>{data.fullName}</h3>
+          <h3 style={{ fontWeight: "700", color: "#005792" }}>
+            ({data.nickname})
           </h3>
         </div>
         <div id="inf">
@@ -50,7 +51,7 @@ export function DriverInfo({ data }: Props) {
           <h2>500CVE</h2>
         </div>
         <button>
-          <h3>BOOK NOW</h3>
+          <h3>Book Now</h3>
         </button>
       </div>
     </div>
