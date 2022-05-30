@@ -38,6 +38,26 @@
           color: #005792;
         }
       }
+      .time {
+        font-weight: 700; 
+
+
+        &::before{
+          content: '';
+          flex: 1;
+          height: 1px;
+          background: #005792;
+          margin-right: 10px;
+        }
+        &::after {
+          content: '';
+          flex: 1;
+          height: 1px;
+          background: #005792;
+          margin-left: 10px;
+        }
+        
+      }
     } 
   }
   #price{

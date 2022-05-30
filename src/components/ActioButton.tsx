@@ -2,7 +2,7 @@ import { ButtonHTMLAttributes } from "react";
 import "../styles/actionButton.scss";
 
 type Props = ButtonHTMLAttributes<HTMLElement> & {
-  icon: string;
+  icon?: string;
   title: string;
 };
 export function ActionButton({ icon, title, ...rest }: Props) {

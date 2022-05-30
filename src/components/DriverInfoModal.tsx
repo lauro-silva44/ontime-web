@@ -19,9 +19,9 @@ type Props = {
   data: driverProps;
 };
 
-export function DriverInfo({ data }: Props) {
+export function DriverInfoModal({ data }: Props) {
   return (
-    <div className="driverContainer">
+    <div style={{ width: "380px" }} className="driverContainer">
       <img className="driverPhoto" src={data.photoPath} alt="driverPhoto" />
       <div className="infos">
         <div id="inf">
@@ -44,14 +44,6 @@ export function DriverInfo({ data }: Props) {
           <img src={ReviewSvg} alt="fullName" />
           <h3>{data.rate}</h3>
         </div>
-      </div>
-      <div id="price">
-        <div>
-          <h2>500CVE</h2>
-        </div>
-        <button>
-          <h3>BOOK NOW</h3>
-        </button>
       </div>
     </div>
   );
