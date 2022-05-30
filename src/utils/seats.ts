@@ -1,0 +1,16 @@
+export const seats = [
+  { id: "1", booked: false },
+  { id: "2", booked: true },
+  { id: "3", booked: false },
+  { id: "4", booked: false },
+  { id: "5", booked: false },
+  { id: "6", booked: true },
+  { id: "7", booked: true },
+  { id: "8", booked: false },
+  { id: "9", booked: true },
+  { id: "10", booked: false },
+  { id: "11", booked: false },
+  { id: "12", booked: true },
+  { id: "13", booked: false },
+  { id: "14", booked: false },
+];

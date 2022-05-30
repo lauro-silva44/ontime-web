@@ -5,6 +5,8 @@ import { drivers } from "../../utils/drivers";
 import GonPhoto from "../../assets/driverAssets/driverPhotos/gon.png";
 import "../../styles/search.scss";
 import { Footer } from "../../components/Footer";
+import { Modal } from "../../components/Modal";
+import { CarMap } from "../../components/CarMap";
 
 export function Search() {
   return (
@@ -17,6 +19,9 @@ export function Search() {
         ))}
       </div>
       <Footer />
+      <Modal>
+        <CarMap />
+      </Modal>
     </div>
   );
 }
