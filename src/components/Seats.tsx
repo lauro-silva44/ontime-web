@@ -5,7 +5,7 @@ type seatProps = {
   booked: boolean;
 };
 
-type Props = {
+export type Props = {
   data: seatProps;
 };
 

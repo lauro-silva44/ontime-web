@@ -9,6 +9,7 @@ import { CarMap } from "../../components/CarMap";
 import { DriverInfoModal } from "../../components/DriverInfoModal";
 import { createContext, useState } from "react";
 import { useSelector } from "react-redux";
+import { LoginModal } from "../../components/LoginModal";
 
 export const TestProvider = createContext({});
 
@@ -31,7 +32,7 @@ export function Search() {
       <Modal>
         <div className="test">
           <div className="carMap">
-            <CarMap />
+            <CarMap data={findId(driverId)?.seats} />
           </div>
           <div className="driverInfo">
             <DriverInfoModal data={findId(driverId)} />

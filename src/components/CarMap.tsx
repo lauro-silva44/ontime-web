@@ -3,7 +3,16 @@ import { Seats } from "./Seats";
 import "../styles/carMap.scss";
 import WheelSvg from "../assets/driverAssets/sterry-wheel 2.svg";
 
-export function CarMap() {
+type seatProps = {
+  id: string;
+  booked: boolean;
+};
+
+type Props = {
+  data: seatProps[] | undefined;
+};
+
+export function CarMap({ data }: Props) {
   return (
     <div className="carMapContainer">
       <div className="infContainer">
@@ -24,7 +33,7 @@ export function CarMap() {
         <div className="driverSeat">
           <img src={WheelSvg} alt="driverSeat" color={"#005792"} />
         </div>
-        {seats.map((seat) => (
+        {data?.map((seat) => (
           <Seats data={seat} />
         ))}
       </div>

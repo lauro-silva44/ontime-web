@@ -8,6 +8,8 @@ import { SearchArea } from "../../components/SearchArea";
 import { CardsPlace } from "../../components/PlaceCards";
 import { mostVisited, recomended } from "../../utils/places";
 import { Footer } from "../../components/Footer";
+import { Modal } from "../../components/Modal";
+import { LoginModal } from "../../components/LoginModal";
 
 export function Home() {
   return (
@@ -65,6 +67,9 @@ export function Home() {
         </div>
         <Footer />
       </div>
+      <Modal>
+        <LoginModal />
+      </Modal>
     </div>
   );
 }
