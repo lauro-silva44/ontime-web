@@ -3,6 +3,15 @@ import SchedulleSvg from "../assets/driverAssets/schedule.svg";
 import BusSvg from "../assets/driverAssets/bus.svg";
 import ReviewSvg from "../assets/driverAssets/review.svg";
 import "../styles/driverInfo.scss";
+import {
+  ButtonHTMLAttributes,
+  createContext,
+  useContext,
+  useState,
+} from "react";
+import { TestProvider } from "../pages/Search/Search";
+import { useDispatch, useSelector } from "react-redux";
+import { openModal } from "../redux/slices/modalSlice";
 
 type driverProps = {
   id: string;
@@ -15,11 +24,12 @@ type driverProps = {
   arrivalTime: string;
 };
 
-type Props = {
+type Props = ButtonHTMLAttributes<HTMLElement> & {
   data: driverProps;
 };
 
 export function DriverInfo({ data }: Props) {
+  const dispatch = useDispatch();
   return (
     <div className="driverContainer">
       <img className="driverPhoto" src={data.photoPath} alt="driverPhoto" />
@@ -50,7 +60,7 @@ export function DriverInfo({ data }: Props) {
         <div>
           <h2>500CVE</h2>
         </div>
-        <button>
+        <button onClick={() => dispatch(openModal(data.id))}>
           <h3>Book Now</h3>
         </button>
       </div>

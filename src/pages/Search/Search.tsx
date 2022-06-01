@@ -7,12 +7,15 @@ import { Footer } from "../../components/Footer";
 import { Modal } from "../../components/Modal";
 import { CarMap } from "../../components/CarMap";
 import { DriverInfoModal } from "../../components/DriverInfoModal";
-import { ActionButton } from "../../components/ActioButton";
+import { createContext, useState } from "react";
+import { useSelector } from "react-redux";
+
+export const TestProvider = createContext({});
 
 export function Search() {
+  const { driverId } = useSelector((state: any) => state.modal);
   function findId(id: string) {
     let driver = drivers.find((driver) => driver.id === id);
-
     return driver;
   }
   return (
@@ -31,9 +34,9 @@ export function Search() {
             <CarMap />
           </div>
           <div className="driverInfo">
-            <DriverInfoModal data={findId("5")} />
+            <DriverInfoModal data={findId(driverId)} />
             <div className="minibusphoto">
-              <img src={findId("1")?.minibusPhoto} alt="minibusPhot" />
+              <img src={findId(driverId)?.minibusPhoto} alt="minibusPhot" />
             </div>
           </div>
         </div>

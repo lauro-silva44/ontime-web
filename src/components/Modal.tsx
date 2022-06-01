@@ -1,20 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { createContext, useContext } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { closeModal } from "../redux/slices/modalSlice";
 import "../styles/modal.scss";
+
 export function Modal(props: any) {
-  const [display, setDisplay] = React.useState(true);
+  const { open } = useSelector((state: any) => state.modal);
+  const dispatch = useDispatch();
 
-  function openModal() {
-    setDisplay(true);
-  }
-  function closeModal() {
-    setDisplay(false);
-  }
-
-  if (display) {
+  if (open) {
     return (
       <div className={"modal-wrapper"}>
-        <div onClick={closeModal} className={"modal-backdrop"} />
+        <div
+          onClick={() => dispatch(closeModal())}
+          className={"modal-backdrop"}
+        />
         <div className={"modal-box"}>{props.children}</div>
       </div>
     );
