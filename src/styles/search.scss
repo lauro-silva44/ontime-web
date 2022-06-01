@@ -25,16 +25,15 @@
       .minibusphoto{
         display: flex;
         justify-content: center;
-        width: 380px;
-        height: 210px;
         border: 2px solid #FFB740;
         align-items: center;
         margin: 10px;
         border-radius: 8px;
         >img{
-          height: 180px;
-          width:auto;
-          object-fit:contain;
+          height: 205px;
+          width: 380px;
+          border-radius: 8px;
+          object-fit:cover;
         }
       }
     } 

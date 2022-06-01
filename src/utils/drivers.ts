@@ -4,7 +4,12 @@ import MidoriyaPhoto from "../assets/driverAssets/driverPhotos/midoriya.png";
 import KilluaPhoto from "../assets/driverAssets/driverPhotos/killua.png";
 import KawakiPhoto from "../assets/driverAssets/driverPhotos/kawaki.png";
 import ShikamaruPhoto from "../assets/driverAssets/driverPhotos/shikamaru.png";
-import MinibusPhoto from "../assets/driverAssets/minibus.png";
+import GonMinibusPhoto from "../assets/driverAssets/minisbusAssets/gonBus.jpeg";
+import KawakiMinibusPhoto from "../assets/driverAssets/minisbusAssets/kawakiBus.jpeg";
+import KilluaMinibusPhoto from "../assets/driverAssets/minisbusAssets/killuaBus.jpeg";
+import LuffyMinibusPhoto from "../assets/driverAssets/minisbusAssets/luffyBus.webp";
+import MidoriyaMinibusPhoto from "../assets/driverAssets/minisbusAssets/midoriyaBus.jpeg";
+import ShikamaruMinibusPhoto from "../assets/driverAssets/minisbusAssets/shikamaruBus.jpeg";
 
 export const drivers = [
   {
@@ -16,7 +21,7 @@ export const drivers = [
     arrivalTime: "11:50",
     rate: 5,
     photoPath: GonPhoto,
-    minibusPhoto: MinibusPhoto,
+    minibusPhoto: GonMinibusPhoto,
   },
   {
     id: "2",
@@ -27,7 +32,7 @@ export const drivers = [
     arrivalTime: "12:50",
     rate: 5,
     photoPath: LuffyPhoto,
-    minibusPhoto: MinibusPhoto,
+    minibusPhoto: LuffyMinibusPhoto,
   },
   {
     id: "3",
@@ -38,7 +43,7 @@ export const drivers = [
     arrivalTime: "13:50",
     rate: 5,
     photoPath: MidoriyaPhoto,
-    minibusPhoto: MinibusPhoto,
+    minibusPhoto: MidoriyaMinibusPhoto,
   },
   {
     id: "4",
@@ -49,7 +54,7 @@ export const drivers = [
     arrivalTime: "15:50",
     rate: 5,
     photoPath: KilluaPhoto,
-    minibusPhoto: MinibusPhoto,
+    minibusPhoto: KilluaMinibusPhoto,
   },
   {
     id: "5",
@@ -60,7 +65,7 @@ export const drivers = [
     arrivalTime: "16:50",
     rate: 5,
     photoPath: KawakiPhoto,
-    minibusPhoto: MinibusPhoto,
+    minibusPhoto: KawakiMinibusPhoto,
   },
   {
     id: "6",
@@ -71,6 +76,6 @@ export const drivers = [
     arrivalTime: "14:50",
     rate: 5,
     photoPath: ShikamaruPhoto,
-    minibusPhoto: MinibusPhoto,
+    minibusPhoto: ShikamaruMinibusPhoto,
   },
 ];
