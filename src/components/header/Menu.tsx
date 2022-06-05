@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import AddUserSvg from "../../assets/addUser.svg";
 import BookingSvg from "../../assets/booking.svg";
 import LoginSvg from "../../assets/login.svg";
@@ -5,10 +6,14 @@ import LogoSvg from "../../assets/logo.svg";
 import "../../styles/menuItems.scss";
 
 export function Menu() {
+  let navigate = useNavigate();
+  function takeMeHome() {
+    navigate("/", { replace: true });
+  }
   return (
     <div className="container">
       <div>
-        <button>
+        <button onClick={takeMeHome}>
           <img src={LogoSvg} alt="logo" id="logo" />
         </button>
       </div>

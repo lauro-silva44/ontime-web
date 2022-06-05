@@ -1,4 +1,5 @@
 import "../styles/searchField.scss";
+import { cities } from "../utils/cities";
 
 type Props = {
   title: string;
@@ -11,8 +12,14 @@ export function SearchField({ title, icon, placeholderText }: Props) {
     <div id="searachFildContainer">
       <h3>{title}</h3>
       <div>
-        <img src={icon} />
-        <input type="text" placeholder={placeholderText} />
+        <img src={icon} style={{ marginLeft: "5px" }} />
+        <select name="pets" id="pet-select">
+          {cities.map((city) => (
+            <option key={city.cityId} value={city.cityId}>
+              {city.name}
+            </option>
+          ))}
+        </select>
       </div>
     </div>
   );
