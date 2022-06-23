@@ -30,6 +30,7 @@ type Props = ButtonHTMLAttributes<HTMLElement> & {
 
 export function DriverInfo({ data }: Props) {
   const dispatch = useDispatch();
+
   return (
     <div className="driverContainer">
       <img className="driverPhoto" src={data.photoPath} alt="driverPhoto" />

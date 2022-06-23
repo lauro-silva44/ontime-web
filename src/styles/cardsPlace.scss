@@ -1,5 +1,6 @@
 .containerCard{
 
+transition: all .2s ease-in-out; 
   margin: 0 1em;
   img{
     width: 250px;
@@ -22,5 +23,5 @@
   }
 
 
-
 }
+.containerCard:hover { transform: scale(1.1); }

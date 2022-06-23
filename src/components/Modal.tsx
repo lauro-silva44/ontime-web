@@ -4,10 +4,10 @@ import { closeModal } from "../redux/slices/modalSlice";
 import "../styles/modal.scss";
 
 export function Modal(props: any) {
-  const { open } = useSelector((state: any) => state.modal);
+  const { open, display } = useSelector((state: any) => state.modal);
   const dispatch = useDispatch();
 
-  if (open) {
+  if (open || display) {
     return (
       <div className={"modal-wrapper"}>
         <div

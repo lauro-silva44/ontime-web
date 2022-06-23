@@ -10,6 +10,7 @@ import { mostVisited, recomended } from "../../utils/places";
 import { Footer } from "../../components/Footer";
 import { Modal } from "../../components/Modal";
 import { LoginModal } from "../../components/LoginModal";
+import { useDispatch } from "react-redux";
 
 export function Home() {
   return (
@@ -59,8 +60,15 @@ export function Home() {
                 </p>
               </div>
               <div id="downloadButtons">
-                <img src={GoogleDownload} alt="prototype" />
-                <img src={AppleDownload} alt="prototype" />
+                <a
+                  href="https://play.google.com/store/games
+                "
+                >
+                  <img src={GoogleDownload} alt="prototype" />
+                </a>
+                <a href="https://www.apple.com/lae/app-store/">
+                  <img src={AppleDownload} alt="prototype" />
+                </a>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 
 
 #searachFildContainer{
+  padding-bottom: 20px;
 
   h3{
     color: #005792;
@@ -9,9 +10,8 @@
   div {
     display: flex;
     flex-direction: row;
-    border: 2px solid #005792;
     border-radius: 5px; 
-    background-color: #005792;
+    background-color: #E7E7E7;
     align-items:center;
     select {
     width: 280px;
@@ -22,8 +22,8 @@
     outline: none;
     top: 100%;
     border: none;
-    background-color: #005792;
-    color: #fff;
+    background-color: #E7E7E7;
+    color: #005792;
     font: 400 14px 'Raleway', sans-serif;
 
 
@@ -31,9 +31,8 @@
       background-color: #FFB740;
       
     }
-    
-    
 
     }
+    
   }
 }

@@ -7,7 +7,7 @@ type Props = ButtonHTMLAttributes<HTMLElement> & {
 };
 export function ActionButton({ icon, title, ...rest }: Props) {
   return (
-    <button className="actionContainer" {...rest}>
+    <button className="action-container" {...rest}>
       <img src={icon} alt="" />
       <h3>{title}</h3>
     </button>

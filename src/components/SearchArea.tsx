@@ -9,7 +9,7 @@ import { SearchField } from "./SearchField";
 export function SearchArea() {
   let navigate = useNavigate();
   function navigateToSearch() {
-    navigate("/driver-search", { replace: true });
+    navigate("/driver-search", { replace: false });
   }
 
   return (
