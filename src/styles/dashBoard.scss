@@ -1,0 +1,80 @@
+@import "../utils/colors.scss";
+@import "global.scss";
+ 
+.container {
+  display: flex;
+  .admin-info {
+    margin-top:150px;
+    width: 430px;
+    border-right: 2px solid $blue-border;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .admin-photo {
+      width: 221.37px;
+      height: 221.37px;
+      background-color: $blue-border;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      img {
+        height: 207px;
+        width: auto;
+        object-fit: contain;
+        border-radius: 5px;
+
+      }
+    }
+    .admin-name {
+      width:217.54px;
+      height:61.37px;
+      background-color: $yellow;
+      border-radius:5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 10px $yellow;
+      margin: 20px;
+
+      h3 {
+        color: $white;
+      }
+    }
+    h4 {
+      color: $white;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  .icon-list {
+    background-color: $blue-border;
+    width: 227.4px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 8px;
+    .drivers {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      margin-left: 40px;
+
+      img {
+        height: 20px;
+        width: 20px;
+      }
+      h3 {
+        color: $white;
+        font-weight:500;
+        font-size: 16px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
