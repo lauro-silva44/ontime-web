@@ -1,0 +1,48 @@
+@import "../utils/colors.scss";
+
+.reserve-container {
+  
+  display: flex;
+ 
+
+  .blue-line{
+    display: flex;
+    border-bottom: 1px solid $blue-border;
+    height: 65px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 622px;
+    margin-left:10px;
+    .photo-info {
+      display: flex;
+    }
+
+  }
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+   
+
+
+    .info-type {
+      display: flex;
+      height: 30px;
+      width:10px;
+      align-items: space-around;
+      
+
+      img{
+        height: 20px;
+        width: auto;
+        margin-right: 5px;
+      }
+      p{
+        color: $yellow;
+      }
+    }
+    p {
+      color: $white;
+    }
+  }
+}

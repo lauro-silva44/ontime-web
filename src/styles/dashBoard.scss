@@ -3,8 +3,52 @@
  
 .container {
   display: flex;
+  flex-direction: column;
+  padding: 0 180px 0 180px;
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 35px 0 48px 0;
+    img {
+      width:88.79px;
+    }
+    .login-button {
+      width: 109px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: $yellow;
+      border: none;
+      border-radius: 8px;
+
+      
+      img {
+        width: 24px;
+        height: 24px;
+        margin: 7px;
+
+      }
+      p{
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+      }
+  }
+}
+.dash{
+  display: flex;
+
+  .drivers-list {
+    height:214px;
+    overflow: scroll;
+    margin-top: 10px;
+  }
+
+  
   .admin-info {
-    margin-top:150px;
     width: 430px;
     border-right: 2px solid $blue-border;
     height: 100vh;
@@ -77,4 +121,66 @@
       }
     }
   }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 27px;
+    .info-name {
+      display: flex;
+      align-items: center;
+       h2 {
+        font-weight: 600;
+        color: $white;
+       }
+    }
+    .info-image {
+      width:75.62px;
+      height:75.62px;
+      background-color: $blue-border;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+
+      .container-icon {
+        width: 65.75px;
+        height: 65.75px;
+        background: #FFB740;
+        border-radius: 3.83563px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .menu-icons {
+      display: flex;
+      width: 695px;
+      justify-content: space-between;
+      padding-left: 75.75px;
+      margin-top: 30px;
+
+      .icon-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          margin-right: 10px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+  }
+
+}
+.passangers-info {
+  margin-top: 50px;
+  height:220px;
+  overflow: scroll;
+}
 }

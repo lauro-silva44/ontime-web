@@ -1,0 +1,18 @@
+@import "../utils/colors.scss";
+
+  .yellow-border {
+    height: 54.79px;
+    width: 54.79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: $yellow;
+    
+    img {
+      height: 49.32px;
+      width: 49.32px; 
+      border-radius: 5px;
+      object-fit: cover; 
+    }
+  }

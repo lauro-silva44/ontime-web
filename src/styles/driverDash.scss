@@ -1,0 +1,40 @@
+@import "../utils/colors.scss";
+
+
+.driver-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+  .yellow-border {
+    height: 54.79px;
+    width: 54.79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: $yellow;
+    margin-right: 20px;
+    
+    img {
+      height: 49.32px;
+      width: 49.32px; 
+      border-radius: 5px;
+      object-fit: cover; 
+    }
+  }
+  .infos {
+    display: flex;
+    justify-content: space-between;
+    width: 622px;
+    height: 63px;
+    align-items: center;
+    border-bottom: 1px solid $blue-border;
+    
+    p {
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
