@@ -1,18 +1,26 @@
 import { UserPhotoDash } from "./UserPhotoDash";
 import "../styles/userDash.scss";
-import { drivers } from "../utils/driverTest4Dash";
 import FullnameIconSvg from "../assets/dash-board/menu-icons/fullname.svg";
 
-export function PassengersDash() {
+type PassengerType = {
+  name: string;
+  photoPath: string;
+};
+
+type Props = {
+  data: PassengerType;
+};
+
+export function PassengersDash({ data }: Props) {
   return (
     <div className="passDash-container">
-      <UserPhotoDash photo={drivers[0].photoPath} />
+      <UserPhotoDash photo={data.photoPath} />
       <div className="line-info">
         <div className="full-icon">
           <img src={FullnameIconSvg} alt="fullnameIcon" />
           <p>Fullname</p>
         </div>
-        <p className="fullname">other test</p>
+        <p className="fullname">{data.name}</p>
       </div>
     </div>
   );

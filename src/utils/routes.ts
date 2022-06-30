@@ -8,7 +8,7 @@ export const routes = [
   {
     routeId: "r01",
     startPoint: "Assomada",
-    destination: "Assomada",
+    destination: "S.Cruz",
     price: "600CVE",
   },
   {

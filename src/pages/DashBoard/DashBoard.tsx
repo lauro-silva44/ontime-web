@@ -18,6 +18,9 @@ import RoutesIconSvg from "../../assets/dash-board/menu-icons/routes.svg";
 import { drivers } from "../../utils/driverTest4Dash";
 import { PassengersDash } from "../../components/PassengersDash";
 import { Reservation } from "../../components/Reservation";
+
+import { passengers } from "../../utils/passengers";
+import { bookings } from "../../utils/bookings";
 export function DashBoard() {
   return (
     <div className="container">
@@ -107,12 +110,9 @@ export function DashBoard() {
             <h2>Passengers</h2>
           </div>
           <div className="passangers-info">
-            <PassengersDash />
-            <PassengersDash />
-            <PassengersDash />
-            <PassengersDash />
-            <PassengersDash />
-            <PassengersDash />
+            {passengers.map((passenger) => (
+              <PassengersDash data={passenger} />
+            ))}
           </div>
           <div className="info-name" style={{ marginTop: "50px" }}>
             <div className="info-image">
@@ -120,10 +120,12 @@ export function DashBoard() {
                 <img src={BookmarkSvg} alt="" />
               </div>
             </div>
-            <h2>Passengers</h2>
+            <h2>Bookings</h2>
           </div>
           <div className="passangers-info">
-            <Reservation />
+            {bookings.map((booking) => (
+              <Reservation data={booking} />
+            ))}
           </div>
         </div>
       </div>
