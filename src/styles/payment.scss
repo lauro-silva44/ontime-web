@@ -1,0 +1,191 @@
+@import "../utils/colors.scss";
+.payment{
+  height: 100vh;
+  width: 100vw;
+}
+.payment-container{
+  display: flex;
+  align-items: center;
+  height: 90%;
+  justify-content: center;
+
+
+.card-info {
+  width: 780px;
+  height: 626px;
+  border-radius: 5px;
+  background: $blue-border;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 38px;
+  margin: 10px;
+
+  .title {
+    display: flex;
+    height: 84px;
+    width: 701px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 15px 0;
+    border-bottom: 1px dashed $white;
+
+    p {
+      color: $white;
+      font-weight: 600;
+    }
+
+    .description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
+      height: 42px;
+      
+      p {
+        color: $yellow;
+        font-weight: 400;
+      }
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .name-on-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      margin: 10px;
+
+      img {
+        height:24px;
+        width: 24px;
+        margin-left: 10px;
+      }
+    }
+    input {
+      height: 53px;
+      width: 701px;
+      left: 183px;
+      border-radius: 5px;
+      border: 1px solid $yellow;
+      background-color: transparent;
+      outline:none;
+      padding-left: 20px;
+      color: #fff;
+    }
+    ::placeholder {
+      color: #fff;
+      opacity: .6;
+      font-weight:300;
+    }
+    input:focus::placeholder {
+      color: transparent;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+      }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+    
+  }
+  .expiration-date {
+    display: flex;
+
+   
+  }
+
+  .save-info {
+    display: flex;
+    margin-top: 40px;
+
+    .text {
+      margin-left: 20px;
+
+    p {
+      font-weight: 700;
+      color: $white;
+    }
+    span {
+      font-weight: 400;
+      font-size:12px;
+      color: $white;
+
+      strong {
+        color: $yellow
+      }
+
+    }
+  }
+}
+
+}
+.reservation-info{
+  display: flex;
+  width: 500px;
+  height: 626px;
+  align-items: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .reser-info {
+   display: flex;
+   .user-info {
+    display: flex;
+    height: 45px;
+    width: 505px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $blue-border;
+    margin-bottom: 30px;
+
+    h4 {
+      color: $white;
+      font-weight: 400;
+    }
+   }
+  }
+  .confirm-button {
+    display: flex;
+    height: 73px;
+    width: 357px;
+    border-radius: 5px;
+    background-color: $yellow;
+    align-items: center;
+    justify-content: center;
+    font-family: Raleway;
+    margin: 15px;
+
+    img {
+      margin-right: 10px;
+    }
+
+    h2{
+      color: $white;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      letter-spacing: -0.02em;
+      text-align: left;
+    }
+  }
+
+  h3 {
+    margin: 20px;
+  }
+}
+}

@@ -10,10 +10,15 @@ import { DriverInfoModal } from "../../components/DriverInfoModal";
 import { createContext, useState } from "react";
 import { useSelector } from "react-redux";
 import { LoginModal } from "../../components/LoginModal";
+import { useNavigate } from "react-router-dom";
 
 export const TestProvider = createContext({});
 
 export function Search() {
+  let navigate = useNavigate();
+  function makeMePay() {
+    navigate("/driver-search/payment", { replace: true });
+  }
   const { driverId } = useSelector((state: any) => state.modal);
   function findId(id: string) {
     let driver = drivers.find((driver) => driver.id === id);
@@ -42,7 +47,7 @@ export function Search() {
           </div>
         </div>
         <div className="bookButton">
-          <button>
+          <button onClick={makeMePay}>
             <h3>Book Now</h3>
           </button>
         </div>

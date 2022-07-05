@@ -6,7 +6,7 @@ import PassengerSvg from "../assets/bookings/passenger.svg";
 import RouteSvg from "../assets/bookings/route.svg";
 import "../styles/reservation.scss";
 
-type RouteProps = {
+export type RouteProps = {
   routeId: string;
   startPoint: string;
   destination: string;

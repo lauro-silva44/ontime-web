@@ -35,6 +35,9 @@ export function Menu() {
   function login() {
     navigate("/login");
   }
+  function showMybooking() {
+    navigate("/bookings");
+  }
 
   return (
     <div className="container-header">
@@ -46,26 +49,15 @@ export function Menu() {
       <nav>
         <ul id="menuItems">
           <li>
-            <button className="animation-button">
+            <button className="animation-button" onClick={showMybooking}>
               <img src={BookingSvg} alt="" />
               <h3>My Booking</h3>
             </button>
           </li>
           <li>
-            <button
-              className="animation-button"
-              onClick={() => {
-                setDisplay(true);
-              }}
-            >
+            <button className="animation-button" onClick={login}>
               <img src={LoginSvg} alt="" />
               <h3>Sign In</h3>
-            </button>
-          </li>
-          <li>
-            <button className="animation-button" onClick={login}>
-              <img src={AddUserSvg} alt="" />
-              <h3>Create your Account</h3>
             </button>
           </li>
         </ul>
