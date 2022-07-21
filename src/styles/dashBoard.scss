@@ -13,6 +13,7 @@
     margin: 35px 0 48px 0;
     img {
       width:88.79px;
+      height: auto;
     }
     .login-button {
       width: 109px;
@@ -153,8 +154,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        img {
+          height: 40px;
+          width: auto;
+        }
       }
     }
+
+
 
     .menu-icons {
       display: flex;

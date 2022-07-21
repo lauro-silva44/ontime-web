@@ -6,6 +6,7 @@ import { store } from "./redux/store";
 
 import "./services/firebase";
 import { DashBoard } from "./pages/DashBoard/DashBoard";
+import { Payment } from "./pages/Payment/Payment";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

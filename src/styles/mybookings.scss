@@ -1,0 +1,25 @@
+.my-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  height: 100%;
+
+
+  h2{
+    margin: 40px;
+  }
+  
+  .tickets {
+    width:1282px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+  }
+  .footer {
+      position: fixed;
+      bottom: 0;
+    
+  }
+}

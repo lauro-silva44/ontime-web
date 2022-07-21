@@ -21,11 +21,19 @@ import { Reservation } from "../../components/Reservation";
 
 import { passengers } from "../../utils/passengers";
 import { bookings } from "../../utils/bookings";
+import { useNavigate } from "react-router-dom";
+
 export function DashBoard() {
+  let navigate = useNavigate();
+  function takeMeHome() {
+    navigate("/", { replace: true });
+  }
   return (
     <div className="container">
       <div className="menu">
-        <img src={LogoSvg} alt="logo" />
+        <button onClick={takeMeHome}>
+          <img src={LogoSvg} alt="logo" />
+        </button>
 
         <button className="login-button">
           <img src={LoginSvg} alt="login" />
@@ -92,9 +100,6 @@ export function DashBoard() {
               </div>
             </div>
             <div className="drivers-list">
-              {drivers.map((driver) => (
-                <DriverDash data={driver} />
-              ))}
               {drivers.map((driver) => (
                 <DriverDash data={driver} />
               ))}
